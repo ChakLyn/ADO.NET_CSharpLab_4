@@ -1,0 +1,15 @@
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\bin\Debug\WPF_People_lab.exe.config
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\bin\Debug\WPF_People_lab.exe
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\bin\Debug\WPF_People_lab.pdb
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab.csprojResolveAssemblyReference.cache
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\App.g.cs
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab_MarkupCompile.cache
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab_MarkupCompile.lref
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab.g.resources
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab.Properties.Resources.resources
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab.csproj.GenerateResource.Cache
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab.exe
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\WPF_People_lab.pdb
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\View\MainWindow.g.cs
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\View\MainWindow.baml
+c:\users\iam\documents\visual studio 2015\Projects\WPF_People_lab\WPF_People_lab\obj\Debug\GeneratedInternalTypeHelper.g.cs

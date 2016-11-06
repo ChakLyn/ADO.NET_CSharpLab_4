@@ -1,0 +1,71 @@
+﻿<Window x:Class="WPF_People_lab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_People_lab.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="350" MinWidth="600" Height="350" Width="600" SizeToContent="Height">
+
+    <Window.DataContext>
+        <local:MainWindowViewModel></local:MainWindowViewModel>
+    </Window.DataContext>
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" x:Name="menuBar" VerticalAlignment="Top" Height="auto">
+            <MenuItem Header="File" Margin="0">
+                <MenuItem Header="Load" Command="{Binding LoadPeople}"/>
+                <MenuItem Header="Save as" Command="{Binding SavePeople}"/>
+                <Separator/>
+                <MenuItem Header="Exit" Command="{Binding Exit}"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Travel in future" Command="{Binding TravelInFuture}"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.009"/>
+                    <GradientStop Color="#FFFF7272" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="150*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="45*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Grid.Column="0" Grid.Row="0" Background="AliceBlue">
+                <TextBlock Margin="5" Text="Name" HorizontalAlignment="Center"/>
+                <TextBox Margin="5,0,5,5" Text="{Binding CurrentHuman.Name, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center"/>
+            </StackPanel>           
+
+            <StackPanel Grid.Column="1" Grid.Row="0" Background="BlanchedAlmond">
+                <TextBlock Margin="5" Text="Age" HorizontalAlignment="Center"/>
+                <TextBox Margin="5,0,5,5" Text="{Binding CurrentHuman.Age, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="2" Grid.Row="0" Background="Beige">
+                <TextBlock Margin="5" Text="Weight" HorizontalAlignment="Center"/>
+                <TextBox Margin="5,0,5,5" Text="{Binding CurrentHuman.Weight, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center"/>
+            </StackPanel>
+
+            <Grid Grid.Column="3" Grid.Row="0" Background="Salmon">
+                <Button Margin="2" Content="Add" Command="{Binding AddHuman}"
+                        FontSize="14" Background="#FFF6FF88"/>
+            </Grid>
+
+            <DataGrid Grid.ColumnSpan="4" Grid.Row="1" Margin="6" ItemsSource="{Binding People, UpdateSourceTrigger=PropertyChanged}" ColumnWidth="*" Height="Auto">
+                
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>
